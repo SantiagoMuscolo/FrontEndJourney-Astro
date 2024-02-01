@@ -1,0 +1,71 @@
+---
+import { navbarItems } from '../constants/constants.ts'
+import Logo from '../assets/Logo.webp'
+---
+
+<header>
+    <nav class="flex items-center justify-between p-2 bg-[#363636] w-full">
+      <div class="flex-initial relative left-[30px]">
+        <img src={Logo.src} width="60" height="70" alt="Logo" />
+      </div>
+      <div class="hidden md:flex flex-grow justify-center space-x-28">
+        {navbarItems?.map((item: {id: number, name: string}) => (
+          <div class="cursor-pointer ">
+            <span class="text-lg capitalize font-medium">{item.name}</span>
+          </div>
+        ))}
+      </div>
+
+      <button class="md:hidden burger-menu mr-4" id="burgerMenu">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="10" fill="#FEDA00"></rect>
+          <rect y="35" width="100" height="10" fill="#FEDA00"></rect>
+          <rect y="70" width="100" height="10" fill="#FEDA00"></rect>
+        </svg>
+    </button>
+    
+      
+
+      <div class="absolute top-[70px] right-0 bg-[#363636] shadow-md w-full hidden text-center" id="mobileMenu">
+        {navbarItems?.map((item: {id: number, name: string}) => (
+          <div class="cursor-pointer p-2 border-b border-[#FEDA00]">
+            <span class="text-lg capitalize font-medium">{item.name}</span>
+          </div>
+        ))}
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    const burgerIcon = document.getElementById('burgerMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const header = document.querySelector('header');
+
+    burgerIcon?.addEventListener('click', () => {
+      mobileMenu?.classList.toggle('hidden');
+      header?.classList.toggle('transform-x');
+    });
+  </script>
+
+  <style>
+   .burger-menu svg {
+      cursor: pointer;
+      overflow: visible;
+    }
+
+    .burger-menu svg rect {
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+    }
+
+    .transform-x .burger-menu svg rect:nth-child(1) {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .transform-x .burger-menu svg rect:nth-child(2) {
+      opacity: 0;
+    }
+
+    .transform-x .burger-menu svg rect:nth-child(3) {
+      transform: rotate(-45deg) translate(-60px, -15px);
+    }
+  </style>
