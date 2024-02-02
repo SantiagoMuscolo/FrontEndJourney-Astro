@@ -1,0 +1,75 @@
+---
+import HeroIcon from '../assets/HeroIcon.webp'
+import Chevrone from '../assets/svgs/chevrone.svg'
+---
+
+<section class="flex flex-col items-center pt-20 lg:pt-[15%]">
+    <div class="w-full px-4 flex flex-col items-center justify-center text-center lg:flex-row">
+        <div class="flex-grow max-w-[1500px]">
+            <h1 class="text-[2rem] w-[700px] h-[40px] uppercase whitespace-nowrap typewriter sm:text-[3rem] sm:h-[65px] lg:text-[5rem] lg:h-[100px]">Front end journey</h1>
+            <span class="text-[0.8rem] sm:text-[1rem] lg:text-[1.8rem]">Be creative - Be skilled - Be enthusiastic - Be front-end</span>
+        </div>
+        <div class="flex-shrink-0 lg:relative lg:left-20">
+            <img src={HeroIcon.src} width="500" height="300" alt="hero icon">
+        </div>
+    </div>
+    <div class="mt-20 bounce cursor-pointer">
+        <img src={Chevrone.src} width="40" height="40" alt="chevrone">
+    </div>
+</section>
+
+
+<script>
+ const typewriterElement = document.querySelector('.typewriter');
+const texts = ["Front end journey", "Improve coding", "Be your best ʕ•́ᴥ•̀ʔっ♡"];
+let currentTextIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingDelay = 200;
+let erasingDelay = 100;
+let newTextDelay = 2000;
+
+function type() {
+  if (isDeleting) {
+    if (charIndex > 0 && typewriterElement) {
+      charIndex--;
+      typewriterElement.textContent = texts[currentTextIndex].substring(0, charIndex);
+      setTimeout(type, erasingDelay);
+    } else {
+      isDeleting = false;
+      currentTextIndex = (currentTextIndex + 1) % texts.length;
+      setTimeout(type, typingDelay);
+    }
+  } else {
+    if (charIndex < texts[currentTextIndex].length && typewriterElement) {
+      charIndex++;
+      typewriterElement.textContent = texts[currentTextIndex].substring(0, charIndex);
+      setTimeout(type, typingDelay);
+    } else {
+      isDeleting = true;
+      setTimeout(type, newTextDelay);
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  if (typewriterElement) {
+    setTimeout(type);
+  }
+});
+</script>
+
+<style>
+@keyframes smooth-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+}
+
+.bounce {
+    animation: smooth-bounce 2s ease-in-out infinite;
+}
+</style>
