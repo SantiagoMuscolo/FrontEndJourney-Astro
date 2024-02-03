@@ -22,7 +22,7 @@ const { title } = Astro.props;
 	</head>
 	<body class="bg-[#202020] min-h-screen pb-32">
 		<Navbar />
-		<main class="max-w-5xl px-4 m-auto">
+		<main class="max-w-full  m-auto">
 			<slot />
 		</main>	
 	</body>
@@ -42,6 +42,7 @@ const { title } = Astro.props;
 	html {
 		font-family: system-ui, sans-serif;
 		color-scheme: dark light;
+		scroll-behavior: smooth;
 	}
 	code {
 		font-family:

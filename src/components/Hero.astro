@@ -3,9 +3,9 @@ import HeroIcon from '../assets/HeroIcon.webp'
 import Chevrone from '../assets/svgs/chevrone.svg'
 ---
 
-<section class="flex flex-col items-center pt-20 lg:pt-[15%]">
+<section class="flex flex-col items-center pt-20 lg:pt-[8%]">
     <div class="w-full px-4 flex flex-col items-center justify-center text-center lg:flex-row">
-        <div class="flex-grow max-w-[1500px]">
+        <div class="flex-grow max-w-[800px] lg:text-start">
             <h1 class="text-[2rem] w-[700px] h-[40px] uppercase whitespace-nowrap typewriter sm:text-[3rem] sm:h-[65px] lg:text-[5rem] lg:h-[100px]">Front end journey</h1>
             <span class="text-[0.8rem] sm:text-[1rem] lg:text-[1.8rem]">Be creative - Be skilled - Be enthusiastic - Be front-end</span>
         </div>
@@ -14,14 +14,16 @@ import Chevrone from '../assets/svgs/chevrone.svg'
         </div>
     </div>
     <div class="mt-20 bounce cursor-pointer">
+      <a href="#about-us">
         <img src={Chevrone.src} width="40" height="40" alt="chevrone">
+      </a>
     </div>
 </section>
 
 
 <script>
  const typewriterElement = document.querySelector('.typewriter');
-const texts = ["Front end journey", "Improve coding", "Be your best ʕ•́ᴥ•̀ʔっ♡"];
+const texts = ["Front end journey", "Improve coding", "Be your best"];
 let currentTextIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
