@@ -24,8 +24,6 @@ import Github from '../assets/svgs/Github.svg'
 import Netlify from '../assets/svgs/Netlify.svg'
 import Gitlab from '../assets/svgs/Gitlab.svg'
 
-
-
 export const navbarItems = [
     {
         id:1,
