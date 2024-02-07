@@ -1,7 +1,6 @@
 ---
 import Navbar from '../components/Navbar.astro';
-
-// import Header from '../components/Header.astro';
+import AstroSVG from '../assets/svgs/Astro.svg';
 
 interface Props {
 	title: string;
@@ -20,11 +19,14 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-[#202020] min-h-screen pb-32">
+	<body class="bg-[#202020] min-h-screen">
 		<Navbar />
 		<main class="max-w-full  m-auto">
 			<slot />
 		</main>	
+		<footer class="flex justify-center">
+			<span class="flex items-center gap-4">Build with <img src={AstroSVG.src} width="40" height="100" alt="astro icon"> by Santiago Muscolo</span>
+		</footer>
 	</body>
 </html>
 <style is:global>
