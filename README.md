@@ -8,7 +8,7 @@ El objetivo de este proyecto es proporcionar una guía estructurada y recursos p
 
 ## ¿Quién Soy?
 
-Soy Santiago Muscolo, Tengo 20 años y soy Front-End developer, trabajo de esto hace ya casi 1 año y sigo probando y descubriendo lo qu elas nuevas tecnologias tienen para ofrecernos y en este caso le toco a Atro.
+Soy Santiago Muscolo, Tengo 20 años y soy Front-End developer, trabajo de esto hace ya casi 1 año y sigo probando y descubriendo lo que las nuevas tecnologias tienen para ofrecernos y en este caso le toco a Atro.
 
 ## Características
 
