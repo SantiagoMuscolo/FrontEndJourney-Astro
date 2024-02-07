@@ -27,11 +27,14 @@ import Logo from '../assets/Logo.webp'
       
 
       <div class="absolute top-[70px] right-0 bg-[#363636] shadow-md w-full hidden text-center" id="mobileMenu">
-        {navbarItems?.map((item: {id: number, name: string, href: string}) => (
+        <div class="flex flex-col">
+          {navbarItems?.map((item: {id: number, name: string, href: string}) => (
           <a class="cursor-pointer p-2 border-b border-[#FEDA00]" href={item.href}>
             <span class="text-lg capitalize font-medium">{item.name}</span>
           </a>
         ))}
+        </div>
+        
       </div>
     </nav>
   </header>
