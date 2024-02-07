@@ -8,7 +8,7 @@ El objetivo de este proyecto es proporcionar una guía estructurada y recursos p
 
 ## ¿Quién Soy?
 
-(Aquí es donde te presentas. Incluye tu nombre, tu experiencia, y por qué decidiste crear este proyecto. Personaliza esta sección para que los visitantes del repositorio puedan conocerte mejor.)
+Soy Santiago Muscolo, Tengo 20 años y soy Front-End developer, trabajo de esto hace ya casi 1 año y sigo probando y descubriendo lo qu elas nuevas tecnologias tienen para ofrecernos y en este caso le toco a Atro.
 
 ## Características
 
@@ -19,7 +19,8 @@ El objetivo de este proyecto es proporcionar una guía estructurada y recursos p
 ## Tecnologías Utilizadas
 
 - Astro
-- (Menciona otras tecnologías, librerías o APIs que hayas utilizado en el proyecto)
+- Tailwind
+- Javascript
 
 ## Cómo Usar
 
@@ -29,13 +30,9 @@ Para explorar el roadmap y los recursos proporcionados, visita la versión despl
 
 Si estás interesado en contribuir al proyecto, ya sea añadiendo contenido al roadmap, mejorando la documentación, o de cualquier otra manera, por favor lee la sección de contribuciones. (Aquí puedes incluir instrucciones específicas sobre cómo otros pueden contribuir a tu proyecto.)
 
-## Licencia
-
-(Aquí puedes especificar la licencia bajo la cual has lanzado tu proyecto, por ejemplo, MIT, GPL, etc.)
-
 ## Contacto
 
-Si tienes preguntas, comentarios o sugerencias, no dudes en contactarme. (Incluye tu dirección de correo electrónico o cualquier otra forma de contacto que prefieras.)
+Si tienes preguntas, comentarios o sugerencias, no dudes en contactarme. [Linkedin](https://www.linkedin.com/in/santiago-muscolo-142578249/)
 
 ---
 
