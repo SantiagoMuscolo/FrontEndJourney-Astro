@@ -24,7 +24,7 @@ Soy Santiago Muscolo, Tengo 20 años y soy Front-End developer, trabajo de esto 
 
 ## Cómo Usar
 
-Para explorar el roadmap y los recursos proporcionados, visita la versión desplegada del proyecto en [Frontend Journey]([https://frontend-journey.netlify.app/](https://frontendjourney-astro.netlify.app/)).
+Para explorar el roadmap y los recursos proporcionados, visita la versión desplegada del proyecto en [Frontend Journey](https://frontend-journey.netlify.app/](https://frontendjourney-astro.netlify.app/)).
 
 ## Contribuir
 
